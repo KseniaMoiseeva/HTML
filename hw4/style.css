@@ -1,0 +1,44 @@
+﻿* { 
+	margin:0;
+	padding: 0;
+}
+
+body {
+	background-image: url(img/background.jpg);
+	font-family: Tahoma, Arial;
+}
+
+.homework4 {
+	width: 1000px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.logo1 {
+	float: left;
+	width: 30%;
+}
+
+.contacts, .contries {
+	font: #128aa7;
+}
+.contacts {
+	float: left;
+	width: 70%;
+}
+
+.contries {
+	float: left;
+}
+
+.contries li{
+	float: left;
+}
+
+
+
+/*.footer {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}*/
