@@ -1,6 +1,7 @@
 ﻿* { 
 	margin:0;
 	padding: 0;
+  background-size: 100% 100%;
 }
 
 body {
@@ -8,10 +9,18 @@ body {
 	font-family: Tahoma, Arial;
 }
 
+ul {
+	list-style: none;
+}
+
 .homework4 {
 	width: 1000px;
 	margin: auto;
 	background-color: #fff;
+	height: 1000px;
+	-webkit-box-shadow: 0 4px 10px rgba(0,0,0,1);
+  	-moz-box-shadow:    0 4px 10px rgba(0,0,0,1);
+  	box-shadow:         0 4px 10px rgba(0,0,0,1);
 }
 
 .logo1 {
@@ -19,26 +28,159 @@ body {
 	width: 30%;
 }
 
-.contacts, .contries {
-	font: #128aa7;
-}
 .contacts {
-	float: left;
-	width: 70%;
+  	color: rgba(18, 138, 167, 0.8);
+  	float: right;
+  	line-height: 20px;
+  	font-size: 12px;
+  	margin-right: 35px;
+  	padding: 10px;
+  	height: 100%;
 }
-
+.contacts p:first-child {
+  	font-weight: bold;
+}
 .contries {
-	float: left;
+	clear: right;
+  	margin-right: 30px;
 }
 
 .contries li{
-	float: left;
+	display: inline-block;
+  	float: right;
+  	font-size: 10px;
+  	margin-right: 5px;
 }
 
+.contries a {
+	display: block;
+  	color: #128aa7;
+  	padding: 5px;
+  	text-align: center;
+  	position: relative;
+}
 
+.menu {
+  	background-color: #2c2c2c;
+  	height: 38px;
+  	width: 100%;
+  	margin-top:-2px;
+}
 
-/*.footer {
-	clear: both;
-	position: relative;
-	overflow: hidden;
-}*/
+span {
+  	font-size: 8px;
+  	vertical-align: center;
+}
+
+ul {
+  	display: block;
+  	margin: none;
+  	padding: none;
+}
+
+ul:after {
+  	display: block;
+  	content: '';
+  	clear: both;
+  	float: none;
+}
+
+ul.menu > li {
+  	float: left;	
+  	position: relative;
+  	cursor: pointer;
+  	width: 140px;
+  	height: 30px;
+}
+
+ul.menu > li >a {
+  	display: block;
+  	padding: 10px;
+  	font-size: 14px;
+  	color: white;
+  	text-decoration: none;
+  	text-align:center;
+}
+
+ul.menu > li >a:hover {
+  	background-color: #343434;
+}
+
+ul.submenu {
+  	display: none;
+  	position: absolute;
+  	width: 120px;
+  	top: 37px;
+  	left: 0;
+  	background-color: white;
+  	border: 1px solid black;
+}
+
+ul.submenu > li {
+  	display: block;
+}
+
+ul.submenu > li >a {
+  	display: block;
+  	padding: 10px;
+  	color: white;
+  	background-color: #343434;
+  	text-decoration: none;
+  	font-size: 14px;
+}
+
+ul.submenu > li >a:hover {
+  	text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+  	display: block;
+}
+
+.content{
+  background-color:white;
+  height:550px;
+  overflow:hidden;
+  text-align:justify;
+  font-size:14px;
+  color:rgb(66,76,67);
+}
+
+h3{
+  text-align:center;
+  font-weight:bold;
+  font-size:18px;
+  margin:10px;
+}
+
+.column1 {
+  width: 200px;
+  height:100%;
+  float: left;
+  color: grey;
+  padding:0 15px;
+  background-color:#ddd;
+}
+.column2 {
+  width: 200px;
+  float: left;
+  height:100%;
+  padding:0 15px;
+}
+.column3 {
+  width: 200px;
+  float: right;
+  color: grey;
+  height:100%;
+  background-color:#ddd;
+  padding:0 15px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+  height:30px;
+  padding:10px;
+}
