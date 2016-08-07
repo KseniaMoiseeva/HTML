@@ -1,4 +1,4 @@
-/*подкючаем шрифт*/
+﻿/*подкючаем шрифт*/
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -26,6 +26,7 @@ body {
 header {
   height: 35px;
   background: #075190;
+
 }
 
 .menu li {
@@ -39,6 +40,7 @@ header {
   text-decoration: none;
   margin-right: 28px;
 }
+
 
 .act a span {
   text-decoration: underline;
